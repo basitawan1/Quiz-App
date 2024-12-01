@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Quiz App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="quiz-container">
+    <h1 class="fade-in">Pakistan Quiz</h1>
+    <div id="quiz" class="slide-in">
+      <div id="question" class="fade-in"></div>
+      <div class="options">
+        <button class="option" onclick="selectOption(0)">Option 1</button>
+        <button class="option" onclick="selectOption(1)">Option 2</button>
+        <button class="option" onclick="selectOption(2)">Option 3</button>
+        <button class="option" onclick="selectOption(3)">Option 4</button>
+      </div>
+    </div>
+    <button id="next-btn" onclick="nextQuestion()">Next</button>
+    <div id="result" class="fade-in"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
